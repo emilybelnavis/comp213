@@ -1,0 +1,238 @@
+html {
+    /*box-sizing: border-box;*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+/* --- Font Families --- */
+@font-face {
+    font-family: "New York";
+    src: url("https://acidaliaplanitia.nyc3.cdn.digitaloceanspaces.com/fonts/NewYork/Regular/NewYork.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "New York";
+    src: url("https://acidaliaplanitia.nyc3.cdn.digitaloceanspaces.com/fonts/NewYork/Regular/NewYorkItalic.ttf");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "New York Bold";
+    src: url("https://acidaliaplanitia.nyc3.cdn.digitaloceanspaces.com/fonts/NewYork/Medium/NewYorkMedium-Bold.otf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "New York Bold";
+    src: url("https://acidaliaplanitia.nyc3.cdn.digitaloceanspaces.com/fonts/NewYork/Medium/NewYorkMedium-BoldItalic.otf");
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "SF Pro Rounded";
+    src: url("https://acidaliaplanitia.nyc3.cdn.digitaloceanspaces.com/fonts/SF-Pro/Rounded/SF-Pro-Rounded-Regular.otf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: url("https://acidaliaplanitia.nyc3.cdn.digitaloceanspaces.com/fonts/SF-Pro/Regular/SF-Pro.ttf");
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: "SF Pro";
+    src: url("https://acidaliaplanitia.nyc3.cdn.digitaloceanspaces.com/fonts/SF-Pro/Regular/SF-Pro-Italic.ttf");
+    font-style: italic;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: "SF Pro Bold";
+    src: url("https://acidaliaplanitia.nyc3.cdn.digitaloceanspaces.com/fonts/SF-Pro/Display/SF-Pro-Display-Bold.otf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "SF Pro Bold";
+    src: url("https://acidaliaplanitia.nyc3.cdn.digitaloceanspaces.com/fonts/SF-Pro/Display/SF-Pro-Display-BoldItalic.otf");
+    font-style: italic;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "SF Mono";
+    src: url("https://acidaliaplanitia.nyc3.cdn.digitaloceanspaces.com/fonts/SF-Mono/SF-Mono-Regular.otf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SF Mono";
+    src: url("https://acidaliaplanitia.nyc3.cdn.digitaloceanspaces.com/fonts/SF-Mono/SF-Mono-RegularItalic.otf");
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "SF Mono Bold";
+    src: url("https://acidaliaplanitia.nyc3.cdn.digitaloceanspaces.com/fonts/SF-Mono/SF-Mono-Bold.otf");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "SF Mono Bold";
+    src: url("https://acidaliaplanitia.nyc3.cdn.digitaloceanspaces.com/fonts/SF-Mono/SF-Mono-BoldItalic.otf");
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* --- Footer --- */
+.footer {
+    position: relative;
+    margin: -8px;
+    width: 100%;
+    background-color: #ffffff;
+    font-family: 'New York', serif;
+}
+
+.footer-container {
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+.footer-left {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin: 2rem 0;
+}
+
+.footer-center {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    margin-top: auto;
+    text-align: center;
+}
+
+.footer-center, .ref-badge {
+    margin-top: 1rem !important;
+}
+
+.footer-right {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    position: absolute;
+    padding-right: 1rem;
+    right: 0;
+    margin: 2rem 0;
+}
+
+.footer-text {
+    margin: 0 !important;
+    color: #8e8e8e;
+    font-family: "SF Pro Rounded", sans-serif;
+}
+
+.footer-badge {
+    margin: 4px 16px;
+}
+
+
+
+.footer > .align-right {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#heart {
+    position: absolute;
+    margin: 0 5px 0 5px;
+    color: salmon;
+    text-align: center;
+    animation: heartbeat 2s linear infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale( .75 ); }
+    20% { transform: scale( 1 ); }
+    40% { transform: scale( .75 ); }
+    60% { transform: scale( 1 ); }
+    80% { transform: scale( .75 ); }
+    100% { transform: scale( .75 ); }
+}
+
+.socials {
+    list-style: none;
+    padding-left: 0;
+}
+
+.socials, a {
+    color: #8e8e8e;
+    text-decoration: none;
+}
+.socials > li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.socials > li {
+    display: inline;
+    margin: 0 3px;
+    padding: 0 3px;
+}
+
+.socials > li:last-child {
+    margin-right: 0;
+    padding-right: 0
+}
+
+.github:hover {
+    color: black;
+}
+
+.imdb:hover {
+    color: #e8c401;
+}
+
