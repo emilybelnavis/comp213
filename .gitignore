@@ -1,0 +1,6 @@
+# Webstorm/Jetbrains IDE
+.idea/
+
+# macOS
+**/.DS_Store
+**/MACOSX__
