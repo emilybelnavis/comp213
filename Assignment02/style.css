@@ -78,6 +78,7 @@ header {
     object-fit: cover
 }
 
+
 .as02-card > .as02-card-text {
     margin: auto;
     padding: 2rem 1rem;
@@ -88,3 +89,4 @@ header {
     font-size: 1.5rem !important;
     font-family: "SF Mono Bold", monospace;
 }
+
