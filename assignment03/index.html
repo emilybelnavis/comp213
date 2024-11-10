@@ -1,0 +1,76 @@
+<!-- Filename: index.html -->
+<!-- Author: Samantha E. Belnavis-->
+<!-- Date: 2024-11-10 -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link href="https://acidaliaplanitia.emilybelnavis.ca/cencol/301290698/comp213/assets/css/main.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://acidaliaplanitia.nyc3.cdn.digitaloceanspaces.com/cencol/301290698/comp213/assets/css/font-awesome/all.css" rel="stylesheet" crossorigin="anonymous" />
+    <link href="https://acidaliaplanitia.nyc3.cdn.digitaloceanspaces.com/cencol/301290698/comp213/assets/img/favicon.ico" rel="icon" type="image/x-icon"/>
+</head>
+<body class="as03-body">
+    <header class="as03-banner">
+        <img src="https://acidaliaplanitia.emilybelnavis.ca/cencol/301290698/comp213/assignment03/centennialcollege_logo_horizontal_rgb.jpg"/>
+    </header>
+    <main class="as03-main">
+        <div class="as03-form-container">
+            <h1 class="as03-form-heading">Instructor Evaluation Form</h1>
+            <p class="as03-form-instructions">Please read each statement carefully and consider each one indivdually. Use the <span class="span-bold">form options</span> to make your choice.</p>
+            <form class="as03-form">
+                <fieldset>
+                    <legend class="as03-form-section-header">Course Information</legend>
+                    <div class="as03-form-section">
+                        <label class="block" for="CourseName">Course Name</label>
+                        <input type="text" placeholder="Course Name" id="CourseName">
+                        <label class="block pt-2" for="CourseYear">Course Year</label>
+                        <input type="number" placeholder="2024" id="CourseYear">
+                        <label class="block pt-2" for="Semester">Semester</label>
+                        <input type="radio" name="Semester" id="Winter"><label for="Winter">Winter</label>
+                        <input type="radio" name="Semester" id="Summer"><label for="Summer">Spring/Summer</label>
+                        <input type="radio" name="Semester" id="Fall"><label for="Fall">Fall</label>
+                        <label class="block pt-2" for="Instructor">Instructor's Name</label>
+                        <input type="text" placeholder="Instructor's Name" id="Instructor">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="as03-form-section-header">Student Feedback</legend>
+                    <div class="as03-form-section">
+                        <label class="block" for="effectiveness">How effective was the instructor's teaching?</label>
+                        <select id="effectiveness">
+                            <option>Excellent</option>
+                            <option>Good</option>
+                            <option>Fair</option>
+                            <option>Not Satisfactory</option>
+                        </select>
+                        <label class="block pt-2" for="helpfulness">How helpful were the course materials?</label>
+                        <input type="text" list="helpfulnessOptions" name="helpfulness" id="helpfulness">
+                        <datalist id="helpfulnessOptions">
+                            <option>Very Helpful</option>
+                            <option>Helpful</option>
+                            <option>Unhelpful</option>
+                            <option>Very Unhelpful</option>
+                        </datalist>
+                        <label class="block pt-2" for="additionalFeedback">Do you have any additional feedback for us?</label>
+                        <textarea class="as03-form-additional-feedback" placeholder="Additional feedback..."></textarea>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="as03-form-section-header">Submit Form</legend>
+                    <input type="submit" id="submit" value="Submit">
+                    <input type="reset" id="reset" value="Reset">
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer class="as03-footer">
+        <span class="block">Thank you! We pay attention to your feedback!</span>
+        <span class="block">Web: <a href="https://www.centennialcollege.ca/" target="_blank">https://www.centennialcollege.ca/</a></span>
+        <span class="block">Email: <a href="mailto:feedback@centennialcollege.ca">feedback@centennialcollege.ca</a></span>
+    </footer>
+</body>
+</html>

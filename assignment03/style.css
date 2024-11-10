@@ -1,0 +1,85 @@
+
+.as03-banner {
+    background-color: #464648;
+    margin: auto;
+    width: 80%;
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+}
+
+.as03-banner > img {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    display: block;
+    width: 400px;
+}
+
+.as03-body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #D4DF38, #DBE09B);
+    font-family: sans-serif;
+}
+
+.as03-main {
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-bottom-left-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem;
+}
+
+.as03-footer {
+    background-color: #FFFFFF;
+    margin: auto;
+    padding: 2rem;
+    width: 80%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.as03-form-container {
+    padding: 2rem;
+    
+}
+.as03-form-heading {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.as03-form-instructions {
+    font-weight: 400;
+}
+
+
+.as03-form-section-header {
+    font-size: 1.5rem;
+
+}
+
+.as03-form-section {
+    padding: 0.5rem;
+}
+
+.as03-form-section-label {
+    padding-left: 2rem;
+}
+
+.as03-form-additional-feedback {
+    width: 50%;
+}
+
+.block {
+    display: block;
+}
+
+.span-bold {
+    font-weight: 600;
+}
+
+a {
+    color: #3698ef;
+    text-decoration: underline;
+}

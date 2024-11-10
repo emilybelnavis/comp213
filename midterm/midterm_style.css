@@ -1,0 +1,41 @@
+/* 
+    Samantha Belnavis 
+    COMP213 - Midterm
+    301-290-698
+*/
+
+table { 
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+caption {
+    background: #1491F0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: 1px solid black;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+tbody > tr  > th{
+    font-weight: normal;
+    text-align: left;
+}
+
+tbody > tr:first-child > th  {
+    font-weight: bold;
+    text-align: center;
+}
+
+tbody > tr:first-child {
+    background: #7EC7FF !important;
+}
+
+tbody > tr:nth-of-type(odd) {
+    background: #E3F3FF;
+}
