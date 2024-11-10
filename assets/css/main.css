@@ -47,13 +47,6 @@ body {
     justify-content: space-evenly;
 }
 
-/* [class*='col-'] {
-    position: relative;
-    padding-right: 1px;
-    padding-left: 1px;
-    flex: 1;
-    max-width: 100%;
-} */
 
 /* --- Column Layout --- */
 .col-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
@@ -540,8 +533,9 @@ body {
 
 /* --- Footer --- */
 .footer {
-    position: relative;
-    margin: -8px;
+    position: absolute;
+    bottom: 0;
+    margin: -8px -8px 0 -8px;
     width: 100%;
     background-color: #ffffff;
     font-family: 'New York', serif;
